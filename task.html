@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+    body {
+        font-family: Verdana, sans-serif;
+        background-image: url("PNG/Slide 16_9 - 15.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+     
+    }
+    .navigation {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #b39181;
+    }
+
+    .navigation td {
+    text-align: center;
+    padding: 15px;
+    }
+
+    .navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    }
+     a.active {
+        background: rgb(234, 195, 224);
+    }
+     a:link {
+        color: rgb(89, 53, 53);
+    }
+    a:visited {
+        color: rgb(89, 53, 53);
+    }
+    a:hover {
+        color: #a4541a;
+    }
+      p {
+        color: #5c4033;
+    }
+    h1 {
+        color: #5c4033;
+    }
+    h2 {
+        color: #5c4033;
+    }
+    h3 {
+        color: #5c4033;
+    }
+    h4 {
+        color: #5c4033;
+    }
+    </style>
+</head>
+<body>
+    <table class="navigation" border="0">
+        
+        <tr bgcolor="#b39181">
+            <td colspan="5" align="center">
+                <p>
+                    <a href="coffe.html">Главная</a>
+                    <a href="паспорт/pasport.html">Паспорт покупателя</a>
+                    <a href="https://shop.tastycoffee.ru/blog/istoria-rasprostranenia-kofe">История кофе</a>
+                    <a href="form.html">О нас</a>
+                    <a class = 'active'  href="task.html">Задача</a>
+                </p>
+        
+            </td>
+        </tr>
+    </table>
+    <p name="formulation">Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+    <form action="https://www.google.com" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Формулировка задачи 
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Дано вещественное число. Определить, какое это число: положительное, отрицательное или ноль.</textarea></li>
+            <li>Введите число: <input id="number" name="number"  type="number" step="any" value=""></li>
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен"></li>
+            <p><input id="verify" type="button" value="Проверить"></p>
+            <p><input id="send" type="submit" value="Отправить"></p>
+        </ul>
+    </form>
+</body>
+<script src="js/java.js"></script>
+
+</html>

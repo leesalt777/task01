@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Отправка формы</title>
+    <style>
+    body {
+        font-family: Verdana, sans-serif;
+        background-image: url("PNG/Slide 16_9 - 15.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+     
+    }
+    .navigation {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #b39181;
+}
+
+.navigation td {
+    text-align: center;
+    padding: 15px;
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+     a.active {
+        background: rgb(234, 195, 224);
+    }
+     a:link {
+        color: rgb(89, 53, 53);
+    }
+    a:visited {
+        color: rgb(89, 53, 53);
+    }
+    a:hover {
+        color: #a4541a;
+    }
+      p {
+        color: #5c4033;
+    }
+    h1 {
+        color: #5c4033;
+    }
+    h2 {
+        color: #5c4033;
+    }
+    h3 {
+        color: #5c4033;
+    }
+    h4 {
+        color: #5c4033;
+    }
+    ul {
+        color: #5c4033;
+    }
+</style>
+ </head>
+<body>
+<table class="navigation" border="0">
+    <tr bgcolor="#b39181">
+        <td colspan="5" align="center">
+            <p>
+            <a href="coffe.html">Главная</a>
+            <a href="паспорт/pasport.html">Паспорт покупателя</a>
+            <a href="https://shop.tastycoffee.ru/blog/istoria-rasprostranenia-kofe">История кофе</a>
+            <a class="active" href="form.html">О нас</a>
+            <a href="task.html">Задача</a>
+            </p>
+        </td>
+    </tr>
+</table>
+<table width="1000px">
+        <tr>
+            
+            <td>
+                <img width="200px" align="right" src="PNG/Frame 2.png">
+            </td>
+            <td align="center" valign="middle">
+                <h1>Кофейня «Мир Кофе»</h1>
+                <p>сеть кофеен у дома</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Подпишись на рассылку</h1>
+                <form action="https://ya.ru" target="_blank" name="subscribre">
+                <p><b>Ваше имя:</b><br>
+                <input type="text" name="name" size="40">
+                </p>
+                <p><b>Ваша фамилия:</b><br>
+                <input type="text" name="surname" size="40">
+                </p>
+                <p><b>Ваша группа:</b><br>
+                <input type="Text" size="40" name="group"></p>
+                <p><b>Ваш номер:</b><br>
+                <input type="tel" id="phone" name="phone" value="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                </p>
+                <p><b>Ваш email:</b><br>
+                <input type="text" name="email" size="40">
+                </p>
+                <p><b>Укажите дату рождения:</b><br> 
+                <input type="date" name="date" value='2000-01-01'></p>
+                <p><input type="submit" value="Отправить">
+                <input type="reset" value="Очистить"></p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Закажи зерна на дом</h1>
+                <form action="https://ya.ru" target="_blank" name="order">
+                <p><b>Введите логин:</b><br>
+                <input type="text" name="name" size="40">
+                </p>
+                <p><b>Введите количество пачек:</b><br>
+                <input type="number" id="number" name="number" min="1" max="100" required/>
+                </p>
+                <p><b>Введите пароль:</b><br>
+                <input name="password" size=9 type="Password" value="*******" required/>
+                </p>
+                <p><b>Выберите город доставки:</b><Br>
+                <input type="radio" name="browser" value="spb"> Санкт-Петербург<Br>
+                <input type="radio" name="browser" value="msk"> Москва<Br>
+                <input type="radio" name="browser" value="kaz"> Казань<Br>
+                </p>
+                <p><b>Добавить в заказ:</b><br>
+                <input type="Checkbox" name="experience" value="100" checked>Фильтр-кофе - 100р.<br>
+                <input type="Checkbox" name="experience" value="200" checked>Подарочный сертификат - 200р.<br>
+                <input type="Checkbox" name="experience" value="300" checked>Набор сиропов: малина, вишня, ваниль - 300р.<br>
+                </p>
+                <p><b>Укажите дату отправки заявки:</b><br> 
+                <input type="date" name="date" value='2000-01-01'></p>
+                <p>Комментарий для курьера<Br>
+                <textarea name="comment" cols="40" rows="3"></textarea></p>
+                <input type="hidden" name="hidden" value="ilovecoffee">
+                <p><input type="submit" value="Отправить">
+                <input type="reset" value="Очистить"></p>
+               
+
+            </form>
+            </td>
+        </tr>
+</table>
+
+ </body>
+</html>
