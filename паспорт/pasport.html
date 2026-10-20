@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+   html {
+    height: 100%; /* Высота страницы */     
+   }
+   body {
+    background-image: url(pasport_shablon.png); /* Путь к фоновому рисунку */
+    background-size: 600px auto;
+    background-position: left top; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    font-family: Verdana, sans-serif;
+     
+     
+    }
+     
+   .fio {
+    margin-left: 200px;
+    margin-top: 250px;
+   }
+   .name {
+    margin-left: 200px;
+    margin-top: 10px;
+   }
+   .vyd {
+    margin-left: 70px;
+    margin-top: 60px;
+   }
+   .surname {
+    margin-left: 200px;
+    margin-top: 10px;
+   }
+   .pol {
+    margin-left: 250px;
+    margin-top: 20px;
+   }
+   .place {
+    margin-left: 250px;
+    margin-top: 10px;
+   }
+   .zn {
+    margin-left: 70px;
+    margin-top: 50px;
+   }
+   .png {
+    margin-left: 35px;
+    margin-top: -160px;
+   }
+   .btn {
+    margin-left: 30px;
+    margin-top: 60px;
+   }
+   .DOM {
+     margin-top: 60px;
+   }
+      .navigation {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #b39181;
+    }
+
+    .navigation td {
+    text-align: center;
+    padding: 15px;
+    }
+
+    .navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    }
+     a.active {
+        background: rgb(234, 195, 224);
+    }
+     a:link {
+        color: rgb(89, 53, 53);
+    }
+    a:visited {
+        color: rgb(89, 53, 53);
+    }
+    a:hover {
+        color: #a4541a;
+    }
+      p {
+        color: #5c4033;
+    }
+    h1 {
+        color: #5c4033;
+    }
+    h2 {
+        color: #5c4033;
+    }
+    h3 {
+        color: #5c4033;
+    }
+    h4 {
+        color: #5c4033;
+    }
+   
+  </style>
+</head>
+<body>
+<table class="navigation" border="0">
+    <tr bgcolor="#b39181">
+        <td colspan="5" align="center">
+            <p>
+            <a href="../coffe.html">Главная</a>
+            <a class="active" href="паспорт/pasport.html">Паспорт покупателя</a>
+            <a href="https://shop.tastycoffee.ru/blog/istoria-rasprostranenia-kofe">История кофе</a>
+            <a href="../form.html">О нас</a>
+            <a href="../task.html">Задача</a>
+            </p>
+        </td>
+    </tr>
+</table>
+     <div class="vyd">Выдан УМВД России по Нижегородской области</div>
+     <div class="zn">20/05/2000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 434-2340</div>
+    <div class="fio">Морская</div>
+    <div class="name">Марина</div>
+    <div class="surname">Андреевна</div>
+    <div class="pol">жен. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.01.1965</div>
+    <div class="place">Московская обл.</div>
+     <div class="png"><img src="marina.jpg" width="150" height="200"></div>
+     <button class="btn" id="change">Заменить</button>
+     <input type="button" value="Вычислить" onclick="sum()">
+<script src="change.js"></script>
+
+<div class="DOM"><h1>Считываем информацию из DOM</h1></div>
+<div><img src="marinascreen.jpg" width="600" height="400"></div>
+</body>
+
+</html>
